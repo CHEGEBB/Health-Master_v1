@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ropa+Sans:ital@0;1&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+$Rubik: 'Rubik', sans-serif;
+$Opensans : 'Open Sans', sans-serif;
+$jost: 'Jost', sans-serif;
+$ropa: 'Ropa Sans', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$roboto-slab: 'Roboto Slab', serif;
+$roboto-condensed: 'Roboto Condensed', sans-serif;
+$josefin: 'Josefin Sans', sans-serif;
+$isle: 'Island Moments', cursive;
+
+$white: #ffffff;
+$snow-white: #f9f9f9;
+$ghost-white: #f8f8ff;
+$ivory: #fffff0;
+$old-lace: #fdf5e6;
+$linen: #faf0e6;
+$seashell: #fff5ee;
+$white-smoke: #f5f5f5;
+$floral-white: #fffaf0;
+$alice-blue: #f0f8ff;
+$honeydew: #f0fff0;
+$azure: #f0ffff;
+$special1:#09101A;
+$special2:#041f46;
+
+$cool-dark1: #2c3e50; // Midnight Blue
+$cool-dark2: #34495e; // Dark Slate Gray
+$cool-dark3: #2c3e50; // Dark Cyan
+$cool-dark4: #556b78; // Cadet Blue
+$cool-dark5: #36454f; // Dark Steel Blue
+$cool-dark6: #4d6270; // Slate Gray
+$cool-dark7: #5c6770; // Light Slate Gray
+$cool-dark8: #586b7a; // Dark Gray
+$cool-dark9: #62727b; // Dim Gray
+$cool-dark10: #6b7981; // Gray
+$special1: #09101A; /* Dark blue-black */
+$special2: #041f46; /* Dark navy blue */
+$special3: #0D1B2A; /* Dark charcoal blue */
+$special4: #1B263B; /* Dark slate blue */
+$special5: #111D3C; /* Dark indigo */
+$special6: #0A0F1E; /* Very dark blue */
+$special7: #0C0F18; /* Dark midnight blue */
+$special8: #1F2A44; /* Dark steel blue */
+$special9: #162447; /* Dark sapphire */
+$special10: #1B1B2F; /* Dark space blue */
+$special11: #1A1C20; /* Dark onyx */
+$special12: #212332; /* Dark gunmetal */
+$special13: #202835; /* Dark twilight blue */
+$special14: #142850; /* Dark cerulean */
+$special15: #1C1F2B; /* Dark eclipse */
+$special1: #09101A; /* Dark blue-black */
+$special2: #041f46; /* Dark navy blue */
+$special3: #0D1B2A; /* Dark charcoal blue */
+$special4: #1B263B; /* Dark slate blue */
+$special5: #111D3C; /* Dark indigo */
+$special6: #0A0F1E; /* Very dark blue */
+$special7: #0C0F18; /* Dark midnight blue */
+$special8: #1F2A44; /* Dark steel blue */
+$special9: #162447; /* Dark sapphire */
+$special10: #1B1B2F; /* Dark space blue */
+$special11: #1A1C20; /* Dark onyx */
+$special12: #212332; /* Dark gunmetal */
+$special13: #202835; /* Dark twilight blue */
+$special14: #142850; /* Dark cerulean */
+$special15: #1C1F2B; /* Dark eclipse */
+$special16: #2C3E50; /* Medium-dark blue-gray */
+$special17: #34495E; /* Medium-dark slate gray */
+$special18: #4A69BD; /* Medium-dark blue */
+$special19: #566573; /* Medium-dark gray */
+$special20: #5D6D7E; /* Medium-dark blue-gray */
+
+$dark-pink: #ff1493;
+$deep-pink: #ff1493;
+$pale-violet-red: #db7093;
+$hot-pink: #ff69b4;
+$light-pink: #ffb6c1;
+
+$firebrick: #b22222;
+$indian-red: #cd5c5c;
+$crimson: #dc143c;
+$dark-red: #8b0000;
+$maroon: #800000;
+
+$light-salmon: #ffa07a;
+$coral: #ff7f50;
+$tomato: #ff6347;
+$orange-red: #ff4500;
+$dark-orange: #ff8c00;
+$navy: #000080;
+$dark-blue: #00008b;
+$medium-blue: #0000cd;
+$blue: #0000ff;
+$royal-blue: #4169e1;
+$cornflower-blue: #6495ed;
+$sky-blue: #87ceeb;
+$slate-blue: #6a5acd;
+$medium-slate-blue: #7b68ee;
+$dark-slate-blue: #483d8b;
+$light-slate-blue: #8470ff;
+$steel-blue: #4682b4;
+$deep-sky-blue: #00bfff;
+$powder-blue: #b0e0e6;
+$light-blue: #add8e6;
+$medium-purple: #9370db;
+$medium-spring-green: #00fa9a;
+$medium-aquamarine: #66cdaa;
+$medium-sea-green: #3cb371;
+$blue: #0000ff;
+$medium-blue: #0000cd;
+$dark-blue: #00008b;
+$navy: #000080;
+$royal-blue: #4169e1;
+$sky-blue: #87ceeb;
+$light-sky-blue: #87cefa;
+$steel-blue: #4682b4;
+$light-steel-blue: #b0c4de;
+$powder-blue: #b0e0e6;
+$red: #ff0000;
+$dark-red: #8b0000;
+$light-red: #ffcccb;
+$firebrick: #b22222;
+$crimson: #dc143c;
+$green: #008000;
+$lime: #00ff00;
+$forest-green: #228b22;
+$sea-green: #2e8b57;
+$dark-green: #006400;
+nav {
+    background-color: #3A7BD5;
+    width: 260px;
+    height: 100%;
+    position: fixed;
+    font-family: $jost;
+    padding-top: 120px;
+    .dark{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        margin-left: 30px;
+        padding-bottom: 30px; 
+
+        img{
+            width: 30px;
+            height: 30px;
+            margin-right: 10px; 
+               margin-top: -5px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    h1 {
+        padding: 30px;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        .nav-item {
+            display: flex;
+            flex-direction: row;
+            gap: 1px;
+            position: relative;
+            .navtem {
+                width: 200px;
+                margin-left: -20px;
+                display: flex;
+                justify-content: left;
+            }
+            .nav-icon {
+                width: 40px;
+                height: 40px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                .goalcon{
+                    img{
+                        filter: invert(8);
+                    }
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+                img {
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                    margin-top: 10px;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+            &::after {
+                content: "";
+                width: 3px;
+                height: 100%;
+                position: absolute;
+                left: -4px;
+                top: 0;
+                background-color: transparent;
+            }
+            &.active::after {
+                background-color: orangered;
+            }
+            &:hover {
+                border: none;
+            }
+        }
+        .special {
+            background-color: white;
+            color: #3A7BD5;
+            margin-left: 40px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border: 2px solid #ccc;
+            img {
+                width: 30px;
+                height: 30px;
+                margin-right: 10px;
+                margin-top: 10px;
+                filter: invert(8);
+            }
+            .dark-special {
+                background-color: black;
+                color: white;
+            }
+            .light-special {
+                background-color: white;
+                color: black;
+            }
+            a {
+                display: flex;
+                flex-direction: column;
+                color: #3A7BD5;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+        }
+        li {
+            float: left;
+            display: flex;
+            justify-content: left;
+            margin-left: 40px;
+        }
+        li a {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            text-decoration: none;
+            color: crimson;
+            border-radius: 8px;
+        }
+    }
+}
+
+
+@media  screen and (min-width :1920px) {
+
+    nav{
+        padding-top: 120px;
+        width: 400px;
+        h1{
+            padding: 30px;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            .nav-item{
+                display: flex;
+                flex-direction: row;
+                gap: 1px;
+                .navtem{
+                    width: 200px;
+                    margin-left: -20px;
+                    display: flex;
+                    justify-content: left;
+                }
+
+                .nav-icon{
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        margin-right: 10px;
+                        margin-top: 10px;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .special{
+                background-color: white;
+                color: #3A7BD5;
+                margin-left: 40px;
+                border-top-left-radius: 15px;
+                border-bottom-left-radius: 15px;
+                border: 2px solid #ccc;
+
+                img{
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                    margin-top: 10px;
+                    filter: invert(8);
+                }
+                .dark-special {
+                    background-color: black;
+                    color: white;
+                }
+            
+                .light-special {
+                    background-color: white;
+                    color: black;
+                }
+
+                 a{
+                    display: flex;
+                    flex-direction: column;
+                    color: #3A7BD5;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+            }
+            li{
+                float: left;
+                display: flex;
+                justify-content: left;
+                margin-left: 40px;
+
+            }
+            li a{
+                display: flex;
+                flex-direction: column;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            li a:hover{
+                text-decoration: none;
+                color: crimson;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+            }
+
+            }
+        }
+    
+}

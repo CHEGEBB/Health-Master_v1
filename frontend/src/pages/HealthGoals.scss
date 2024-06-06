@@ -1,0 +1,800 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ropa+Sans:ital@0;1&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+$Rubik: 'Rubik', sans-serif;
+$Opensans : 'Open Sans', sans-serif;
+$jost: 'Jost', sans-serif;
+$ropa: 'Ropa Sans', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$roboto-slab: 'Roboto Slab', serif;
+$roboto-condensed: 'Roboto Condensed', sans-serif;
+$josefin: 'Josefin Sans', sans-serif;
+$isle: 'Island Moments', cursive;
+
+$white: #ffffff;
+$snow-white: #f9f9f9;
+$ghost-white: #f8f8ff;
+$ivory: #fffff0;
+$old-lace: #fdf5e6;
+$linen: #faf0e6;
+$seashell: #fff5ee;
+$white-smoke: #f5f5f5;
+$floral-white: #fffaf0;
+$alice-blue: #f0f8ff;
+$honeydew: #f0fff0;
+$azure: #f0ffff;
+$special1:#09101A;
+$special2:#041f46;
+
+$cool-dark1: #2c3e50; // Midnight Blue
+$cool-dark2: #34495e; // Dark Slate Gray
+$cool-dark3: #2c3e50; // Dark Cyan
+$cool-dark4: #556b78; // Cadet Blue
+$cool-dark5: #36454f; // Dark Steel Blue
+$cool-dark6: #4d6270; // Slate Gray
+$cool-dark7: #5c6770; // Light Slate Gray
+$cool-dark8: #586b7a; // Dark Gray
+$cool-dark9: #62727b; // Dim Gray
+$cool-dark10: #6b7981; // Gray
+$special1: #09101A; /* Dark blue-black */
+$special2: #041f46; /* Dark navy blue */
+$special3: #0D1B2A; /* Dark charcoal blue */
+$special4: #1B263B; /* Dark slate blue */
+$special5: #111D3C; /* Dark indigo */
+$special6: #0A0F1E; /* Very dark blue */
+$special7: #0C0F18; /* Dark midnight blue */
+$special8: #1F2A44; /* Dark steel blue */
+$special9: #162447; /* Dark sapphire */
+$special10: #1B1B2F; /* Dark space blue */
+$special11: #1A1C20; /* Dark onyx */
+$special12: #212332; /* Dark gunmetal */
+$special13: #202835; /* Dark twilight blue */
+$special14: #142850; /* Dark cerulean */
+$special15: #1C1F2B; /* Dark eclipse */
+$special1: #09101A; /* Dark blue-black */
+$special2: #041f46; /* Dark navy blue */
+$special3: #0D1B2A; /* Dark charcoal blue */
+$special4: #1B263B; /* Dark slate blue */
+$special5: #111D3C; /* Dark indigo */
+$special6: #0A0F1E; /* Very dark blue */
+$special7: #0C0F18; /* Dark midnight blue */
+$special8: #1F2A44; /* Dark steel blue */
+$special9: #162447; /* Dark sapphire */
+$special10: #1B1B2F; /* Dark space blue */
+$special11: #1A1C20; /* Dark onyx */
+$special12: #212332; /* Dark gunmetal */
+$special13: #202835; /* Dark twilight blue */
+$special14: #142850; /* Dark cerulean */
+$special15: #1C1F2B; /* Dark eclipse */
+$special16: #2C3E50; /* Medium-dark blue-gray */
+$special17: #34495E; /* Medium-dark slate gray */
+$special18: #4A69BD; /* Medium-dark blue */
+$special19: #566573; /* Medium-dark gray */
+$special20: #5D6D7E; /* Medium-dark blue-gray */
+
+$dark-pink: #ff1493;
+$deep-pink: #ff1493;
+$pale-violet-red: #db7093;
+$hot-pink: #ff69b4;
+$light-pink: #ffb6c1;
+
+$firebrick: #b22222;
+$indian-red: #cd5c5c;
+$crimson: #dc143c;
+$dark-red: #8b0000;
+$maroon: #800000;
+
+$light-salmon: #ffa07a;
+$coral: #ff7f50;
+$tomato: #ff6347;
+$orange-red: #ff4500;
+$dark-orange: #ff8c00;
+$navy: #000080;
+$dark-blue: #00008b;
+$medium-blue: #0000cd;
+$blue: #0000ff;
+$royal-blue: #4169e1;
+$cornflower-blue: #6495ed;
+$sky-blue: #87ceeb;
+$slate-blue: #6a5acd;
+$medium-slate-blue: #7b68ee;
+$dark-slate-blue: #483d8b;
+$light-slate-blue: #8470ff;
+$steel-blue: #4682b4;
+$deep-sky-blue: #00bfff;
+$powder-blue: #b0e0e6;
+$light-blue: #add8e6;
+$medium-purple: #9370db;
+$medium-spring-green: #00fa9a;
+$medium-aquamarine: #66cdaa;
+$medium-sea-green: #3cb371;
+$blue: #0000ff;
+$medium-blue: #0000cd;
+$dark-blue: #00008b;
+$navy: #000080;
+$royal-blue: #4169e1;
+$sky-blue: #87ceeb;
+$light-sky-blue: #87cefa;
+$steel-blue: #4682b4;
+$light-steel-blue: #b0c4de;
+$powder-blue: #b0e0e6;
+$red: #ff0000;
+$dark-red: #8b0000;
+$light-red: #ffcccb;
+$firebrick: #b22222;
+$crimson: #dc143c;
+$green: #008000;
+$lime: #00ff00;
+$forest-green: #228b22;
+$sea-green: #2e8b57;
+$dark-green: #006400;
+@mixin weekly-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 150px;
+    border-radius: 15px;
+    background-color: $alice-blue;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    .weekly-card-title {
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff;
+    }
+    .weekly-card-content {
+        font-size: 16px;
+        color: #fff;
+    }
+    .weekly-card-button {
+        background-color: #fff;
+        color: #f7b731;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .weekly-card-button:hover {
+        background-color: #f3f3f3;
+    }
+
+}
+.health-goals {
+    text-align: center;
+    width: 1000px;
+    margin-left: 100px;
+    height: 100vh;
+    padding: 10px;
+
+    .practice{
+        h2{
+            font-family: $Rubik;
+            font-size: 20px;
+            font-weight: bold;
+            color: #555;
+        }
+        p{
+            font-family: $Rubik;
+            font-size: 16px;
+            color: $special1;
+        }
+    .exercise-visual {
+        width: 950px;
+        background-color: $azure;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-top: 30px;
+        margin-left: 10px;
+        canvas {
+            width: 100%; 
+            height: 300px;
+        }
+    }
+}
+    .goals{
+        gap: 50px;
+        .nutritional-goals {
+           display:flex ;
+           flex-direction: column;
+           .food-vis{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            background-color: $alice-blue;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            .radial-chart{
+                width: 300px;
+                margin-right: 180px;
+            }
+            .goal-setting {
+                max-width: 500px;
+                margin: 0 auto; 
+                margin-left: 20px;
+                padding: 20px;
+                border-radius: 5px;
+                h2 {
+                  text-align: center;
+                  margin-bottom: 20px;
+                }
+              
+                .form-group {
+                  margin-bottom: 20px;
+              
+                  label {
+                    display: block;
+                    margin-bottom: 5px;
+                  }
+              
+                  input[type="number"] {
+                    width: 300px;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    margin-left: -10px;
+                  }
+                }
+              
+                button {
+                  display: block;
+                  width: 100%;
+                  padding: 10px;
+                  background-color: #007bff;
+                  color: #fff;
+                  border: none;
+                  border-radius: 5px;
+                  cursor: pointer;
+                  transition: background-color 0.3s ease;
+              
+                  &:hover {
+                    background-color: #0056b3;
+                  }
+                }
+              }
+              
+           }
+           .foods{
+            margin-top: 20px;
+            display: flex;
+            flex-direction:column ;
+            gap: 40px;
+            .food-item {
+                border-radius: 8px;
+                overflow: hidden;
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                .buttons{
+                  display: flex;
+                  flex-direction: row;
+                  button{
+                      background-color: $deep-sky-blue;
+                      color: $white;
+                      border: none;
+                      padding: 10px 20px;
+                      text-align: center;
+                      text-decoration: none;
+                      display: inline-block;
+                      font-size: 16px;
+                      height: 30px;
+                      width: 100px;
+                      margin: 4px 2px;
+                      cursor: pointer;
+                      border-radius: 5px;
+                      justify-content: center;
+                    align-items:center ;
+                    margin-top: 150px;
+
+                    &:hover {
+                        background-color: $special2;
+                    }
+                  }
+                }
+               
+        
+                .food-image {
+                    width: 100%;
+
+                    img {
+                        width: 300px;
+                        display: flex !important;
+                        justify-content: left;
+                        height: 100%;
+                        border-bottom: 1px solid #ddd;
+                    }
+                }
+        
+                .food-info {
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 300px;
+                    margin-left: -590px;
+        
+                    h2 {
+                        font-size: 1.2rem;
+                        margin-bottom: 10px;
+                    }
+        
+                    p {
+                        margin-bottom: 10px;
+                        text-align: left;
+                    }
+        
+                    .expert-info {
+                        p {
+                            margin-bottom: 5px;
+                            font-size: 0.9rem;
+                            font-family: $Rubik;
+                            font-weight: bold;
+                            color: $dark-slate-blue;
+                        }
+                    }
+                }
+            }
+          }
+        }
+        
+        .progress {
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+
+            
+            .prog{
+                display: flex;
+                flex-direction: row;
+                margin-top: 50px;
+                gap: 40px;
+                position: relative;
+                z-index: 23;
+                .det1{
+                    h2{
+                        color: #555;
+                        font-size: 15px;
+                        font-weight: bold;
+                        font-family:$Rubik ;
+                    }
+                    p{
+                        color: $special1;
+                        font-size: 27px;
+                        font-weight: bold;
+                        font-family:$Rubik ;
+
+                    }
+                }
+
+                .procon{
+                    background-color: #333;
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    padding: 10px;
+                    img{
+                        width: 40px;
+                        height: 40px;
+                       
+
+                    }
+                }
+            }
+          
+            .progress-row1 {
+              display: flex;
+              flex-direction: row;
+              .weekly-progress-workout {
+                @include weekly-card;
+                position: relative;
+                overflow: hidden;
+            
+                &:hover::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: $light-sky-blue;
+                    animation: coverAnimation 0.5s forwards;
+                    border-radius: 15px;
+                    z-index: 0;
+                }
+                
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 0;
+                    height: 0;
+                    background-color: $sky-blue;
+                    border-radius: 15px;
+                    z-index: 0;
+                    transition: width 0.5s, height 0.5s; 
+                }
+                
+                &:hover::before {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                    height: 100%;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 0;
+                    height: 0;
+                    background-color: $light-red;
+                    border-radius: 15px;
+                    z-index: 0;
+                    transition: width 0.5s, height 0.5s; 
+                }
+            }
+            
+        
+              .weekly-progress-run{
+                @include weekly-card;
+                position: relative;
+                overflow: hidden;
+
+                &:hover::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: $light-sky-blue;
+                    animation: coverAnimation 0.5s forwards;
+                    border-radius: 15px;
+                    z-index: 0;
+                }
+                
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 0;
+                    height: 0;
+                    background-color: $sky-blue;
+                    border-radius: 15px;
+                    z-index: 0;
+                    transition: width 0.5s, height 0.5s; 
+                }
+                
+                &:hover::before {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                    height: 100%;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 0;
+                    height: 0;
+                    background-color: $sky-blue;
+                    border-radius: 15px;
+                    z-index: 0;
+                    transition: width 0.5s, height 0.5s; 
+                }
+              }
+          
+              .progress-bar {
+                width: 468px;
+                height: 30px;
+                background-color: #f3f3f3;
+                border-radius: 10px;
+                margin-top: 30px;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                margin-left: -5px;
+               
+          
+                .progress-bar-fill {
+                  height: 100%;
+                  width: 0%;
+                  background-color:$medium-spring-green;
+                  border-radius: 10px;
+                  transition: width 0.6s ease;
+                  border-bottom-left-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  border-top-right-radius: 15px;
+                  animation: progress-bar-fill 2s ease forwards; 
+                }
+              }
+            }
+            .progress-row2 {
+              display: flex;
+              flex-direction: row;
+              .weekly-progress-sleep{
+                @include weekly-card;
+                position: relative;
+                overflow: hidden;
+            
+                &:hover::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: $medium-spring-green;
+                    animation: coverAnimation 0.5s forwards;
+                    border-radius: 15px;
+                    z-index: 0;
+                }
+                
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 0;
+                    height: 0;
+                    background-color: $deep-sky-blue;
+                    border-radius: 15px;
+                    z-index: 0;
+                    transition: width 0.5s, height 0.5s; 
+                }
+                
+                &:hover::before {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                    height: 100%;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 0;
+                    height: 0;
+                    background-color: $medium-spring-green;
+                    border-radius: 15px;
+                    z-index: 0;
+                    transition: width 0.5s, height 0.5s; 
+                }
+            }
+            
+              }
+              .weekly-progress-cycling{
+                @include weekly-card;
+                position: relative;
+                overflow: hidden;
+            
+                &:hover::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: $medium-spring-green;
+                    animation: coverAnimation 0.5s forwards;
+                    border-radius: 15px;
+                    z-index: 0;
+                }
+                
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 0;
+                    height: 0;
+                    background-color: $sky-blue;
+                    border-radius: 15px;
+                    z-index: 0;
+                    transition: width 0.5s, height 0.5s; 
+                }
+                
+                &:hover::before {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                    height: 100%;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 0;
+                    height: 0;
+                    background-color: $light-slate-blue;
+                    border-radius: 15px;
+                    z-index: 0;
+                    transition: width 0.5s, height 0.5s; 
+                }
+            }
+            
+              }
+
+                .progress-bar {
+                    width: 468px;
+                    height: 20px;
+                    background-color: #f3f3f3;
+                    margin-top: 30px;
+                    border-bottom-left-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                    margin-left: -5px;
+
+                    .progress-bar-fill {
+                    height: 100%;
+                    width: 0%;
+                    background-color: $deep-sky-blue;
+                    border-bottom-left-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                    border-top-right-radius: 15px;
+                    transition: width 0.6s ease;
+                    animation: progress-bar-fill 2s ease forwards;
+                  
+                    }
+                }
+            }
+          }
+          
+          @keyframes progress-bar-fill {
+            0% {
+              width: 0%; 
+            }
+            100% {
+              width: 50%;
+            }
+          }
+
+
+    .plan-list {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+      
+      h2 {
+        margin-bottom: 10px;
+      }
+  
+      nav {
+        margin-bottom: 20px;
+  
+        ul {
+          display: flex;
+          gap: 10px;
+          list-style: none;
+          padding: 0;
+          
+          li {
+            background: #eee;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background 0.3s;
+  
+            &:hover {
+              background: #ddd;
+            }
+          }
+        }
+      }
+  
+      .plan-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
+        position: relative;
+  
+        .day {
+          background: #f0f0f0;
+          padding: 10px 15px;
+          border-radius: 5px;
+          font-weight: bold;
+        }
+  
+        .plan-details {
+          flex: 1;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 15px;
+          
+          .plan-title, .plan-status, .plan-type, .plan-value {
+            flex: 1;
+            text-align: center;
+          }
+        }
+  
+        .plan-actions {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+  
+          .start-workout {
+            background: #4caf50;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+  
+            &:hover {
+              background: #45a049;
+            }
+          }
+  
+          .options {
+            position: relative;
+            cursor: pointer;
+  
+            img {
+              width: 24px;
+              height: 24px;
+              filter: invert(1);
+            }
+  
+            .dropdown-menu {
+              position: absolute;
+              top: 30px;
+              right: 0;
+              background: $cool-dark2;
+              border-radius: 5px;
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+              z-index: 10;
+              display: flex;
+              flex-direction: column;
+              
+              button {
+                padding: 10px 20px;
+                background: none;
+                border: none;
+                text-align: left;
+                width: 100%;
+                cursor: pointer;
+                
+                &:hover {
+                    color: $crimson;
+                }
+              }
+            }
+          }
+          
+        }
+      }
+    }
+  
+  
+    

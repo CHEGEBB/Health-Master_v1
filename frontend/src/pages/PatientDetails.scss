@@ -1,0 +1,75 @@
+.details {
+  margin: auto;
+  width: 80%;
+  max-width: 600px;
+
+  h1 {
+      text-align: center;
+      margin-bottom: 20px;
+  }
+
+  .section {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+
+      .field1,
+      .field2,
+      .sex1,
+      .age1,
+      .bloodgroup1,
+      .marital-status1,
+      .status1,
+      .dob1 {
+          margin-bottom: 15px;
+
+          label {
+              display: block;
+              font-weight: bold;
+              margin-bottom: 5px;
+          }
+
+          input[type="text"],
+          select {
+              width: 100%;
+              padding: 10px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              box-sizing: border-box;
+          }
+      }
+
+      .success-message {
+          color: #4caf50;
+          margin-top: 10px;
+          text-align: center;
+          background-color: #0056b3;
+          opacity: 0;
+          transform: translateY(-20px);
+          transition: opacity 0.3s ease, transform 0.3s ease;
+
+          &.show {
+              opacity: 1;
+              transform: translateY(0);
+          }
+      }
+
+      button {
+          background-color: #007bff;
+          color: #fff;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+              background-color: #0056b3;
+          }
+      }
+  }
+}
+
+.show-form {
+  display: block;
+}

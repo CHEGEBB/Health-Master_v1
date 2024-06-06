@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Ropa+Sans:ital@0;1&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+$form-color: #f5f5f5;
+$button-color: #132aae;
+$button-hover-color: #0d1a7f;
+$button-text-color: #ffffff;
+$jost: 'Jost', sans-serif;
+$ropa: 'Ropa Sans', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$roboto-slab: 'Roboto Slab', serif;
+$roboto-condensed: 'Roboto Condensed', sans-serif;
+$josefin: 'Josefin Sans', sans-serif;
+$isle: 'Island Moments', cursive;
+$jost: 'Jost', sans-serif;
+$ropa: 'Ropa Sans', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$roboto-slab: 'Roboto Slab', serif;
+$roboto-condensed: 'Roboto Condensed', sans-serif;
+$josefin: 'Josefin Sans', sans-serif;
+$isle: 'Island Moments', cursive;
+
+$white: #ffffff;
+$snow-white: #f9f9f9;
+$ghost-white: #f8f8ff;
+$ivory: #fffff0;
+$old-lace: #fdf5e6;
+$linen: #faf0e6;
+$seashell: #fff5ee;
+$white-smoke: #f5f5f5;
+$floral-white: #fffaf0;
+$alice-blue: #f0f8ff;
+$honeydew: #f0fff0;
+$azure: #f0ffff;
+
+$dark-pink: #ff1493;
+$deep-pink: #ff1493;
+$pale-violet-red: #db7093;
+$hot-pink: #ff69b4;
+$light-pink: #ffb6c1;
+
+$slate-blue: #6a5acd;
+$medium-slate-blue: #7b68ee;
+$dark-slate-blue: #483d8b;
+$light-slate-blue: #8470ff;
+
+$blue: #0000ff;
+$medium-blue: #0000cd;
+$dark-blue: #00008b;
+$navy: #000080;
+$royal-blue: #4169e1;
+$sky-blue: #87ceeb;
+$light-sky-blue: #87cefa;
+$steel-blue: #4682b4;
+$light-steel-blue: #b0c4de;
+$powder-blue: #b0e0e6;
+
+$red: #ff0000;
+$dark-red: #8b0000;
+$light-red: #ffcccb;
+$firebrick: #b22222;
+$crimson: #dc143c;
+
+$green: #008000;
+$lime: #00ff00;
+$forest-green: #228b22;
+$sea-green: #2e8b57;
+$dark-green: #006400;
+@media screen and (max-width: 1440px) {
+  body{
+    overflow-x: hidden;
+  }
+  .App {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    height: 100vh;
+  }
+  
+  .main-app {
+    width: 100%;
+    max-width: calc(100% - 200px); 
+    margin-left: 180px; 
+    font-family: $jost;
+    h2{
+      font-size: 16px;
+    }
+  }
+
+  .sidenav {
+    min-width: 26%;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .main-app {
+      max-width: calc(100% - 20px); 
+      margin-left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .App {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    height: 100vh;
+  }
+  
+  .main-app {
+    min-width: 74%; 
+  }
+
+  .sidenav {
+    min-width: 26%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    height: 100vh;
+  }
+  
+  .main-app {
+    min-width: 74%;
+  }
+
+  .sidenav {
+    min-width: 26%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .App {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    height: 100vh;
+  }
+  
+  .main-app {
+    min-width: 74%; 
+  }
+
+  .sidenav {
+    min-width: 26%;
+  }
+}
+@media  screen and (min-width: 1920px) {
+  .App {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    height: 100vh;
+  }
+  
+  .main-app {
+    min-width: 74%; 
+    margin-left: 300px;
+  }
+
+  .sidenav {
+    min-width: 26%;
+  }
+  
+}

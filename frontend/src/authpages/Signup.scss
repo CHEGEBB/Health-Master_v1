@@ -1,0 +1,357 @@
+$jost: 'Jost', sans-serif;
+$ropa: 'Ropa Sans', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$roboto-slab: 'Roboto Slab', serif;
+$roboto-condensed: 'Roboto Condensed', sans-serif;
+$josefin: 'Josefin Sans', sans-serif;
+$isle: 'Island Moments', cursive;
+
+$white: #ffffff;
+$snow-white: #f9f9f9;
+$ghost-white: #f8f8ff;
+$ivory: #fffff0;
+$old-lace: #fdf5e6;
+$linen: #faf0e6;
+$seashell: #fff5ee;
+$white-smoke: #f5f5f5;
+$floral-white: #fffaf0;
+$alice-blue: #f0f8ff;
+$honeydew: #f0fff0;
+$azure: #f0ffff;
+$special1:#09101A;
+$special2:#041f46;
+
+$cool-dark1: #2c3e50; // Midnight Blue
+$cool-dark2: #34495e; // Dark Slate Gray
+$cool-dark3: #2c3e50; // Dark Cyan
+$cool-dark4: #556b78; // Cadet Blue
+$cool-dark5: #36454f; // Dark Steel Blue
+$cool-dark6: #4d6270; // Slate Gray
+$cool-dark7: #5c6770; // Light Slate Gray
+$cool-dark8: #586b7a; // Dark Gray
+$cool-dark9: #62727b; // Dim Gray
+$cool-dark10: #6b7981; // Gray
+
+
+$dark-pink: #ff1493;
+$deep-pink: #ff1493;
+$pale-violet-red: #db7093;
+$hot-pink: #ff69b4;
+$light-pink: #ffb6c1;
+
+$firebrick: #b22222;
+$indian-red: #cd5c5c;
+$crimson: #dc143c;
+$dark-red: #8b0000;
+$maroon: #800000;
+
+$light-salmon: #ffa07a;
+$coral: #ff7f50;
+$tomato: #ff6347;
+$orange-red: #ff4500;
+$dark-orange: #ff8c00;
+$navy: #000080;
+$dark-blue: #00008b;
+$medium-blue: #0000cd;
+$blue: #0000ff;
+$royal-blue: #4169e1;
+$cornflower-blue: #6495ed;
+$sky-blue: #87ceeb;
+$slate-blue: #6a5acd;
+$medium-slate-blue: #7b68ee;
+$dark-slate-blue: #483d8b;
+$light-slate-blue: #8470ff;
+$steel-blue: #4682b4;
+$deep-sky-blue: #00bfff;
+$powder-blue: #b0e0e6;
+$light-blue: #add8e6;
+$medium-purple: #9370db;
+$medium-spring-green: #00fa9a;
+$medium-aquamarine: #66cdaa;
+$medium-sea-green: #3cb371;
+$blue: #0000ff;
+$medium-blue: #0000cd;
+$dark-blue: #00008b;
+$navy: #000080;
+$royal-blue: #4169e1;
+$sky-blue: #87ceeb;
+$light-sky-blue: #87cefa;
+$steel-blue: #4682b4;
+$light-steel-blue: #b0c4de;
+$powder-blue: #b0e0e6;
+$red: #ff0000;
+$dark-red: #8b0000;
+$light-red: #ffcccb;
+$firebrick: #b22222;
+$crimson: #dc143c;
+$green: #008000;
+$lime: #00ff00;
+$forest-green: #228b22;
+$sea-green: #2e8b57;
+$dark-green: #006400;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.signup-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: $jost;
+  overflow: hidden;
+  background-color: $dark-slate-blue;
+  background: url("../images/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sign-up{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #3a7bd5;
+  border-radius: 8px;
+  max-height: 500px;
+  border-radius: 12px;
+  box-shadow:  0 0 10px rgba(53, 167, 212, 0.6);
+ 
+}
+.left {
+  height: 500px;
+  width: 450px;
+  background: url('../images/gamification.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: bgShimmer 10s infinite linear;
+  animation: bgPan 10s infinite linear;
+  overflow: hidden;
+  position: relative;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+
+  h1{
+    font-family: $josefin;
+    font-size: 20px;
+    color: $snow-white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+}
+
+.left::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 150%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255,255,255,0) 100%);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -150%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+@keyframes bgPan {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  background-color: $azure;
+  max-height: 500px;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+
+
+}
+
+.signup-form h2 {
+  margin: 0 0 15px 0;
+  color: $deep-pink;
+  font-family: $ropa;
+  font-size: 25px;
+}
+
+form {
+  button {
+    width: 280px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: $deep-sky-blue;
+    color: #fff;
+    margin-left: 5px;
+    cursor: pointer;
+    font-family: $josefin;
+  }
+
+  button:hover {
+    background-color: #ad00b3;
+  }
+}
+
+.signup-form input[type="text"]:focus,
+.signup-form input[type="password"]:focus,
+.signup-form input[type="email"]:focus {
+  border-color: #3a7bd5;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-bottom: 10px;
+  label {
+    display: flex;
+    justify-content: left;
+    font-family: $josefin;
+    font-weight: 700;
+    margin-top: 5px;
+  }
+  input [type="text"],
+  input[type="password"],
+  input[type="email"] {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid $deep-sky-blue;
+    border-radius: 5px;
+    margin-left: 6px;
+    font-family: $jost;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      border-color: $dark-slate-blue;
+      box-shadow: 0 0 10px rgba(118, 24, 116, 0.6);
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+    }
+  }
+  #name {
+    width: 280px;
+    padding: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    font-family: $jost;
+    margin-left: 6px;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      border-color: $dark-pink;
+      box-shadow: 0 0 10px rgba(118, 24, 116, 0.6);
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+    }
+  }
+}
+.password-strength {
+  font-size: 18px;
+  margin-top: 2px;
+  justify-content: left;
+  display: flex;
+  font-family: $jost;
+  &.weak {
+    color:$deep-pink;
+  }
+  &.moderate {
+    color: $coral;
+  }
+  &.strong {
+    color: $deep-sky-blue;
+  }
+}
+
+.password-match {
+  font-size: 18px;
+  margin-top: 3px;
+  color: $deep-pink;
+  justify-content: left;
+  display: flex;
+  font-family: $jost;
+}
+
+@keyframes strengthPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.password-strength-animation {
+  animation: strengthPulse 1s infinite;
+}
+.google-signup {
+  display: flex;
+  flex-direction: column;
+  .googlecon {
+    img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+        transition: opacity 0.2s ease-in-out;
+        transform: scale(1.1);
+      }
+    }
+  }
+  .sign {
+    h2 {
+      margin: 0;
+      font-size: 16px;
+    }
+  }
+}
+// media queries alll screens max 1920 least 375px
+@media screen and (max-width: 1920px) {
+  .signup-container {
+    height: 100vh;
+  }
+  .signup-form {
+    width: 400px;
+  }
+  .left {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .signup-container {
+    height: 100vh;
+  }
+  .signup-form {
+    width: 400px;
+  }
+  .left {
+    width: 450px;
+  }
+}

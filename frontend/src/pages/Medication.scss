@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ropa+Sans:ital@0;1&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+$Rubik: 'Rubik', sans-serif;
+$Opensans : 'Open Sans', sans-serif;
+$jost: 'Jost', sans-serif;
+$ropa: 'Ropa Sans', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$roboto-slab: 'Roboto Slab', serif;
+$roboto-condensed: 'Roboto Condensed', sans-serif;
+$josefin: 'Josefin Sans', sans-serif;
+$isle: 'Island Moments', cursive;
+
+$white: #ffffff;
+$snow-white: #f9f9f9;
+$ghost-white: #f8f8ff;
+$ivory: #fffff0;
+$old-lace: #fdf5e6;
+$linen: #faf0e6;
+$seashell: #fff5ee;
+$white-smoke: #f5f5f5;
+$floral-white: #fffaf0;
+$alice-blue: #f0f8ff;
+$honeydew: #f0fff0;
+$azure: #f0ffff;
+$special1:#09101A;
+$special2:#041f46;
+
+$cool-dark1: #2c3e50; // Midnight Blue
+$cool-dark2: #34495e; // Dark Slate Gray
+$cool-dark3: #2c3e50; // Dark Cyan
+$cool-dark4: #556b78; // Cadet Blue
+$cool-dark5: #36454f; // Dark Steel Blue
+$cool-dark6: #4d6270; // Slate Gray
+$cool-dark7: #5c6770; // Light Slate Gray
+$cool-dark8: #586b7a; // Dark Gray
+$cool-dark9: #62727b; // Dim Gray
+$cool-dark10: #6b7981; // Gray
+$special1: #09101A; /* Dark blue-black */
+$special2: #041f46; /* Dark navy blue */
+$special3: #0D1B2A; /* Dark charcoal blue */
+$special4: #1B263B; /* Dark slate blue */
+$special5: #111D3C; /* Dark indigo */
+$special6: #0A0F1E; /* Very dark blue */
+$special7: #0C0F18; /* Dark midnight blue */
+$special8: #1F2A44; /* Dark steel blue */
+$special9: #162447; /* Dark sapphire */
+$special10: #1B1B2F; /* Dark space blue */
+$special11: #1A1C20; /* Dark onyx */
+$special12: #212332; /* Dark gunmetal */
+$special13: #202835; /* Dark twilight blue */
+$special14: #142850; /* Dark cerulean */
+$special15: #1C1F2B; /* Dark eclipse */
+$special1: #09101A; /* Dark blue-black */
+$special2: #041f46; /* Dark navy blue */
+$special3: #0D1B2A; /* Dark charcoal blue */
+$special4: #1B263B; /* Dark slate blue */
+$special5: #111D3C; /* Dark indigo */
+$special6: #0A0F1E; /* Very dark blue */
+$special7: #0C0F18; /* Dark midnight blue */
+$special8: #1F2A44; /* Dark steel blue */
+$special9: #162447; /* Dark sapphire */
+$special10: #1B1B2F; /* Dark space blue */
+$special11: #1A1C20; /* Dark onyx */
+$special12: #212332; /* Dark gunmetal */
+$special13: #202835; /* Dark twilight blue */
+$special14: #142850; /* Dark cerulean */
+$special15: #1C1F2B; /* Dark eclipse */
+$special16: #2C3E50; /* Medium-dark blue-gray */
+$special17: #34495E; /* Medium-dark slate gray */
+$special18: #4A69BD; /* Medium-dark blue */
+$special19: #566573; /* Medium-dark gray */
+$special20: #5D6D7E; /* Medium-dark blue-gray */
+
+$dark-pink: #ff1493;
+$deep-pink: #ff1493;
+$pale-violet-red: #db7093;
+$hot-pink: #ff69b4;
+$light-pink: #ffb6c1;
+
+$firebrick: #b22222;
+$indian-red: #cd5c5c;
+$crimson: #dc143c;
+$dark-red: #8b0000;
+$maroon: #800000;
+
+$light-salmon: #ffa07a;
+$coral: #ff7f50;
+$tomato: #ff6347;
+$orange-red: #ff4500;
+$dark-orange: #ff8c00;
+$navy: #000080;
+$dark-blue: #00008b;
+$medium-blue: #0000cd;
+$blue: #0000ff;
+$royal-blue: #4169e1;
+$cornflower-blue: #6495ed;
+$sky-blue: #87ceeb;
+$slate-blue: #6a5acd;
+$medium-slate-blue: #7b68ee;
+$dark-slate-blue: #483d8b;
+$light-slate-blue: #8470ff;
+$steel-blue: #4682b4;
+$deep-sky-blue: #00bfff;
+$powder-blue: #b0e0e6;
+$light-blue: #add8e6;
+$medium-purple: #9370db;
+$medium-spring-green: #00fa9a;
+$medium-aquamarine: #66cdaa;
+$medium-sea-green: #3cb371;
+$blue: #0000ff;
+$medium-blue: #0000cd;
+$dark-blue: #00008b;
+$navy: #000080;
+$royal-blue: #4169e1;
+$sky-blue: #87ceeb;
+$light-sky-blue: #87cefa;
+$steel-blue: #4682b4;
+$light-steel-blue: #b0c4de;
+$powder-blue: #b0e0e6;
+$red: #ff0000;
+$dark-red: #8b0000;
+$light-red: #ffcccb;
+$firebrick: #b22222;
+$crimson: #dc143c;
+$green: #008000;
+$lime: #00ff00;
+$forest-green: #228b22;
+$sea-green: #2e8b57;
+$dark-green: #006400;
+.medication {
+    padding: 20px;
+    width: 1000px !important;
+    margin-left: 120px;
+    
+    h1 {
+        text-align: left;
+        margin-bottom: 20px;
+        font-family: $Rubik;
+        font-size: 2.5rem;
+
+    }
+    
+    .gamification{
+        margin-bottom: 30px;
+        width: 900px !important;
+        
+        h2 {
+            text-align: left !important;
+            margin-bottom: 10px;
+            font-family: $Rubik;
+            font-size: 1.5rem;
+            color: $dark-slate-blue;
+        }
+        
+        .points-display {
+            text-align: center;
+            background:$dark-slate-blue;
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+            animation: pulse 2s infinite;
+            
+
+            h3 {
+            margin-bottom: 10px;
+            font-family: $Rubik;
+            font-size: 1.5rem;
+            color: $dark-slate-blue;
+            }
+            
+            .earn-points {
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                background-color: #27ae60;
+                color: white;
+                cursor: pointer;
+                transition: transform 0.2s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .success-message {
+            text-align: center;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: $deep-sky-blue;
+            color: white;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: fadeInOut 3s ease-in-out;
+
+            p {
+                margin: 0;
+                margin-right: 10px;
+                font-family: $josefin;
+                font-weight: 700;
+                font-size: 18px;
+            }
+
+            .star {
+                font-size: 1.5rem;
+                animation: spin 1s linear infinite;
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeInOut {
+            0%, 100% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    }
+    
+    .alarm-section,
+    .todo-section,
+    .interaction-section,
+    .chart-section {
+        margin-bottom: 30px;
+        width: 850px !important;
+        background: #f4f4f4;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    form {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: -10px;
+        input {
+            margin-right: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            &:hover{
+                outline: none !important;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                
+            }
+            &:focus {
+                outline: none !important;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            }
+        }
+    
+
+        button {
+            // padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #3498db;
+            color: white;
+            margin-left: -10px;
+            cursor: pointer;
+            width: 100px;
+            transition: background-color 0.2s;
+
+            &:hover {
+                background-color: #2980b9;
+            }
+        }
+    }
+
+    .alarm-list, .todo-list {
+        h3 {
+            margin-bottom: 10px;
+            
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+
+            li {
+                background: #f4f4f4;
+                padding: 10px;
+                border-radius: 5px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    .interaction-result {
+        margin-top: 20px;
+        
+        h3 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    }
+
+    .prescription-table {
+        width: 920px !important;
+        border-collapse: collapse;
+        margin-top: 30px;
+
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .disease {
+            &.fever { border-color: #e74c3c; }
+            &.cholera { border-color: #2980b9; }
+            &.jaundice { border-color: #f39c12; }
+            &.typhoid { border-color: #8e44ad; }
+            &.malaria { border-color: #27ae60; }
+            &.infection { border-color: #d35400; }
+        }
+
+        .actions {
+            button {
+                margin-right: 10px;
+                padding: 5px 10px;
+                border: none;
+                border-radius: 3px;
+                cursor: pointer;
+
+                &.download {
+                    background-color: #3498db;
+                    color: white;
+                    width: 100px;
+                }
+
+                &.delete {
+                    background-color: #e74c3c;
+                    color: white;
+                    width: 100px;
+                }
+            }
+        }
+    }
+    
+}

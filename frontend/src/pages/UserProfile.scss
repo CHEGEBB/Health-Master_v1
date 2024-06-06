@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ropa+Sans:ital@0;1&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+$Rubik: 'Rubik', sans-serif;
+$Opensans : 'Open Sans', sans-serif;
+$jost: 'Jost', sans-serif;
+$ropa: 'Ropa Sans', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$roboto-slab: 'Roboto Slab', serif;
+$roboto-condensed: 'Roboto Condensed', sans-serif;
+$josefin: 'Josefin Sans', sans-serif;
+$isle: 'Island Moments', cursive;
+
+$white: #ffffff;
+$snow-white: #f9f9f9;
+$ghost-white: #f8f8ff;
+$ivory: #fffff0;
+$old-lace: #fdf5e6;
+$linen: #faf0e6;
+$seashell: #fff5ee;
+$white-smoke: #f5f5f5;
+$floral-white: #fffaf0;
+$alice-blue: #f0f8ff;
+$honeydew: #f0fff0;
+$azure: #f0ffff;
+$special1:#09101A;
+$special2:#041f46;
+
+$cool-dark1: #2c3e50; // Midnight Blue
+$cool-dark2: #34495e; // Dark Slate Gray
+$cool-dark3: #2c3e50; // Dark Cyan
+$cool-dark4: #556b78; // Cadet Blue
+$cool-dark5: #36454f; // Dark Steel Blue
+$cool-dark6: #4d6270; // Slate Gray
+$cool-dark7: #5c6770; // Light Slate Gray
+$cool-dark8: #586b7a; // Dark Gray
+$cool-dark9: #62727b; // Dim Gray
+$cool-dark10: #6b7981; // Gray
+$special1: #09101A; /* Dark blue-black */
+$special2: #041f46; /* Dark navy blue */
+$special3: #0D1B2A; /* Dark charcoal blue */
+$special4: #1B263B; /* Dark slate blue */
+$special5: #111D3C; /* Dark indigo */
+$special6: #0A0F1E; /* Very dark blue */
+$special7: #0C0F18; /* Dark midnight blue */
+$special8: #1F2A44; /* Dark steel blue */
+$special9: #162447; /* Dark sapphire */
+$special10: #1B1B2F; /* Dark space blue */
+$special11: #1A1C20; /* Dark onyx */
+$special12: #212332; /* Dark gunmetal */
+$special13: #202835; /* Dark twilight blue */
+$special14: #142850; /* Dark cerulean */
+$special15: #1C1F2B; /* Dark eclipse */
+$special1: #09101A; /* Dark blue-black */
+$special2: #041f46; /* Dark navy blue */
+$special3: #0D1B2A; /* Dark charcoal blue */
+$special4: #1B263B; /* Dark slate blue */
+$special5: #111D3C; /* Dark indigo */
+$special6: #0A0F1E; /* Very dark blue */
+$special7: #0C0F18; /* Dark midnight blue */
+$special8: #1F2A44; /* Dark steel blue */
+$special9: #162447; /* Dark sapphire */
+$special10: #1B1B2F; /* Dark space blue */
+$special11: #1A1C20; /* Dark onyx */
+$special12: #212332; /* Dark gunmetal */
+$special13: #202835; /* Dark twilight blue */
+$special14: #142850; /* Dark cerulean */
+$special15: #1C1F2B; /* Dark eclipse */
+$special16: #2C3E50; /* Medium-dark blue-gray */
+$special17: #34495E; /* Medium-dark slate gray */
+$special18: #4A69BD; /* Medium-dark blue */
+$special19: #566573; /* Medium-dark gray */
+$special20: #5D6D7E; /* Medium-dark blue-gray */
+
+$dark-pink: #ff1493;
+$deep-pink: #ff1493;
+$pale-violet-red: #db7093;
+$hot-pink: #ff69b4;
+$light-pink: #ffb6c1;
+
+$firebrick: #b22222;
+$indian-red: #cd5c5c;
+$crimson: #dc143c;
+$dark-red: #8b0000;
+$maroon: #800000;
+
+$light-salmon: #ffa07a;
+$coral: #ff7f50;
+$tomato: #ff6347;
+$orange-red: #ff4500;
+$dark-orange: #ff8c00;
+$navy: #000080;
+$dark-blue: #00008b;
+$medium-blue: #0000cd;
+$blue: #0000ff;
+$royal-blue: #4169e1;
+$cornflower-blue: #6495ed;
+$sky-blue: #87ceeb;
+$slate-blue: #6a5acd;
+$medium-slate-blue: #7b68ee;
+$dark-slate-blue: #483d8b;
+$light-slate-blue: #8470ff;
+$steel-blue: #4682b4;
+$deep-sky-blue: #00bfff;
+$powder-blue: #b0e0e6;
+$light-blue: #add8e6;
+$medium-purple: #9370db;
+$medium-spring-green: #00fa9a;
+$medium-aquamarine: #66cdaa;
+$medium-sea-green: #3cb371;
+$blue: #0000ff;
+$medium-blue: #0000cd;
+$dark-blue: #00008b;
+$navy: #000080;
+$royal-blue: #4169e1;
+$sky-blue: #87ceeb;
+$light-sky-blue: #87cefa;
+$steel-blue: #4682b4;
+$light-steel-blue: #b0c4de;
+$powder-blue: #b0e0e6;
+$red: #ff0000;
+$dark-red: #8b0000;
+$light-red: #ffcccb;
+$firebrick: #b22222;
+$crimson: #dc143c;
+$green: #008000;
+$lime: #00ff00;
+$forest-green: #228b22;
+$sea-green: #2e8b57;
+$dark-green: #006400;
+
+.profile-container{
+    margin-left: 100px;
+    margin-top: 20px;
+    width: 970px;
+    color: $special2;
+
+    .personal-details{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        border-radius: 10px;
+        height: 300px;
+        width: 100%;
+        padding: 10px;
+        background-color: $alice-blue;
+        box-shadow:   0 0 10px 0 rgba(0, 0, 0, 0.2);
+
+        .person{
+            display: flex;
+            flex-direction: column;
+            height: 290px;
+            width: 300px;
+            background-color:$azure;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 0;
+            border-radius: 9px;
+
+            .bg{
+                background-color: $light-sky-blue;
+                background-image: url("../images//1\(1\).png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 100px;
+                width: 300px;
+                position: relative;
+                z-index: 1;
+                border-top-left-radius: 9px;
+                border-top-right-radius: 9px;
+            }
+
+            h1{
+                font-size: 30px;
+                font-weight: 600;
+                font-family: $Rubik;
+            }
+
+            p{
+                font-size: 16px;
+                font-weight: 400;
+                font-family: $Rubik;
+            }
+
+            .profile-pic{
+                position: relative;
+                z-index: 1000;
+                margin-top: -50px;
+
+                img{
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    border: 2px solid $white-smoke;
+                }
+            }
+        }
+
+        .private-details{
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            padding: 10px;
+
+            .details{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                h3{
+                    font-size: 15px;
+                    color: #555;
+                    font-weight: 600;
+                    font-family: $Opensans;
+                }
+
+                p{
+                    font-size: 20px;
+                    color: $special1;
+                    font-weight: 700;
+                    font-family: $Opensans;
+                }
+
+                .row1, .row2{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 60px;
+                    width: 600px;
+                    justify-content: center;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    .other-details {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        border-radius: 10px;
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+      
+        .patient-details {
+          display: flex;
+          flex-direction: column;
+          background-color: #e0e0e0;
+          gap: 10px;
+          border-radius: 10px;
+          padding: 20px;
+          height: 100%;
+          width: 400px;
+          h2{
+            font-size: 20px;
+            font-weight: 600;
+            font-family: $Rubik;
+            color: $special1;
+            text-align: left;
+          }
+      
+          .detail {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+      
+            .detail-content {
+              display: flex;
+              justify-content: space-between;
+              width: 100%;
+      
+              .det, .val {
+                display: flex;
+                align-items: center;
+      
+                h3, p {
+                  font-size: 15px;
+                  font-family: $Opensans;
+                }
+      
+                h3 {
+                  color: #555;
+                  font-weight: 600;
+                }
+      
+                p {
+                  color: #333;
+                  font-weight: 700;
+                }
+              }
+      
+              .det {
+                flex: 1;
+              }
+      
+              .val {
+                flex: 1;
+                justify-content: flex-end;
+                text-align: right;
+              }
+            }
+          }
+        }
+      
+        .check-ups {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          background-color: #e0e0e0;
+          border-radius: 10px;
+          padding: 20px;
+          h2{
+            font-family: $Rubik;
+            font-size: 20px;
+            font-weight: 600;
+            color: $special1;
+            text-align: left;
+          }
+      
+          .check-up {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            width: 500px;
+            .doc{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-left: -90px;
+                h3{
+                    font-family: $Rubik;
+                    font-size: 18px;
+                }
+                p{
+                    font-family: $Opensans;
+                    font-size: 15px;
+                    margin-top: -1px;
+                }
+            }
+      
+            p {
+              font-size: 15px;
+              color: #333;
+              font-family: $Opensans;
+            }
+      
+            .doctor-photo {
+              width: 60px;
+              height: 60px;
+              border-radius: 50%;
+              margin-right: 10px;
+              border:  2px solid $special14;
+            }
+      
+            .delete-button {
+              background-color: crimson;
+              color: #fff;
+              border: none;
+              width: 80px;
+              height: 30px;
+              border-radius: 5px;
+              padding: 5px 10px;
+              cursor: pointer;
+              font-size: 12px;
+              transition: background-color 0.3s ease, transform 0.3s ease;
+      
+              &:hover {
+                background-color: #cc0000;
+                transform: scale(1.1);
+              }
+      
+              &:active {
+                transform: scale(0.9);
+              }
+            }
+          }
+        }
+      }
+      .patient-history {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: #e0e0e0;
+        border-radius: 10px;
+        padding: 20px;
+      
+        h2 {
+          font-family: $Rubik;
+          font-size: 20px;
+          font-weight: 600;
+          color: $special1;
+          text-align: left;
+        }
+      
+        .history-item {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          background-color: #f0f0f0;
+          padding: 15px;
+          border-radius: 5px;
+      
+          .history-content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+      
+            .history-detail {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+      
+              h3 {
+                font-size: 15px;
+                font-family: $Opensans;
+                color: #555;
+                font-weight: 600;
+              }
+      
+              p {
+                font-size: 15px;
+                font-family: $Opensans;
+                color: #333;
+                font-weight: 700;
+              }
+      
+              .download-icon {
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+                transition: transform 0.3s ease;
+      
+                &:hover {
+                  transform: scale(1.1);
+                }
+      
+                &:active {
+                  transform: scale(0.9);
+                }
+              }
+            }
+          }
+        }
+      }
+      
+      
+      
+    }      
