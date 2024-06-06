@@ -46,7 +46,7 @@ const UserDetails = () => {
 
     const handleSubmit = async () => {
         try {
-            const response = await fetch('https://health-master-yz7z.onrender.com/api/patients', {
+            const response = await fetch('https://health-master-backend.onrender.com/api/patients', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
