@@ -21,11 +21,11 @@ mongoose.connect(process.env.MONGODB_URI, {
 
 // Import routes for MongoDB (Patient)
 const patientRoutes = require('./routes/patientRoutes');
-const geminiRoutes = require('./routes/geminiRoutes'); // Import geminiRoutes
+const geminiRoutes = require('./routes/geminiRoutes'); 
 
 // Use MongoDB (Patient) routes
 app.use('/api', patientRoutes);
-app.use('/gemini', geminiRoutes); // Use geminiRoutes
+app.use('/gemini', geminiRoutes);
 
 // Start the server
 app.listen(backendPort, () => {

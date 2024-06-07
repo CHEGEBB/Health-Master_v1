@@ -36,61 +36,61 @@ const LandingPage = () => {
                     <h1>Features</h1>
                     <p>Explore the key features of Health Master:</p>
                     <div className='features-grid'>
-                        <div className='feature'>
-                            <div className='feature-image'>
-                                <img src={sypmtom} alt='Intelligent Symptom Checker' />
-                            </div>
-                            <div className='feature-info'>
-                                <h2>Intelligent Symptom Checker</h2>
-                                <p>Description of the Intelligent Symptom Checker.</p>
-                            </div>
-                        </div>
-                        <div className='feature'>
-                            <div className='feature-image'>
-                                <img src={medicine} alt='Medication Management System' />
-                            </div>
-                            <div className='feature-info'>
-                                <h2>Medication Management System</h2>
-                                <p>Description of the Medication Management System.</p>
-                            </div>
-                        </div>
-                        <div className='feature'>
-                            <div className='feature-image'>
-                                <img src={health} alt='Health and Wellness Gamification App' />
-                            </div>
-                            <div className='feature-info'>
-                                <h2>Health and Wellness Gamification App</h2>
-                                <p>Description of the Health and Wellness Gamification App.</p>
-                            </div>
-                        </div>
-                        <div className='feature'>
-                            <div className='feature-image'>
-                                <img src={goals} alt='Health Goals and Progress Tracking' />
-                            </div>
-                            <div className='feature-info'>
-                                <h2>Health Goals and Progress Tracking</h2>
-                                <p>Description of Health Goals and Progress Tracking.</p>
-                            </div>
-                        </div>
-                        <div className='feature'>
-                            <div className='feature-image'>
-                                <img src={feauture} alt='Online Consultancy' />
-                            </div>
-                            <div className='feature-info'>
-                                <h2>Online Consultancy</h2>
-                                <p>Description of the Online Consultancy.</p>
-                            </div>
-                        </div>
-                        <div className='feature'>
-                            <div className='feature-image'>
-                                <img src={online} alt='Online Consultancy' />
-                            </div>
-                            <div className='feature-info'>
-                                <h2>Online Consultancy</h2>
-                                <p>Description of the Online Consultancy.</p>
-                            </div>
-        
-                        </div>
+                    <div className='feature'>
+    <div className='feature-image'>
+        <img src={sypmtom} alt='Intelligent Symptom Checker' />
+    </div>
+    <div className='feature-info'>
+        <h2>Health goals</h2>
+        <p>Empower your journey to well-being by setting personalized health goals and tracking your progress with Healthmaster.</p>
+    </div>
+</div>
+<div className='feature'>
+    <div className='feature-image'>
+        <img src={medicine} alt='Medication Management System' />
+    </div>
+    <div className='feature-info'>
+        <h2>Medication Management System</h2>
+        <p>Effortlessly manage your medications and never miss a dose with Healthmaster's intuitive Medication Management System.</p>
+    </div>
+</div>
+<div className='feature'>
+    <div className='feature-image'>
+        <img src={health} alt='Health and Wellness Gamification App' />
+    </div>
+    <div className='feature-info'>
+        <h2>Health and Wellness Gamification App</h2>
+        <p>Turn healthy habits into fun challenges and earn rewards with Healthmaster's Gamification App, making wellness an exciting journey.</p>
+    </div>
+</div>
+<div className='feature'>
+    <div className='feature-image'>
+        <img src={goals} alt='Health Goals and Progress Tracking' />
+    </div>
+    <div className='feature-info'>
+        <h2>Health Goals and Progress Tracking</h2>
+        <p>Visualize your health journey, celebrate achievements, and stay motivated with Healthmaster's seamless goal tracking and progress monitoring.</p>
+    </div>
+</div>
+<div className='feature'>
+    <div className='feature-image'>
+        <img src={feauture} alt='Virtual Health Assistant' />
+    </div>
+    <div className='feature-info'>
+        <h2>Virtual Health Assistant</h2>
+        <p>Experience personalized guidance and support anytime, anywhere with Healthmaster's Virtual Health Assistant, your trusted companion on the road to wellness.</p>
+    </div>
+</div>
+<div className='feature'>
+    <div className='feature-image'>
+        <img src={online} alt='Online Consultancy' />
+    </div>
+    <div className='feature-info'>
+        <h2>Online Consultancy</h2>
+        <p>Connect with experienced healthcare professionals remotely and receive expert advice tailored to your needs with Healthmaster's Online Consultancy feature.</p>
+    </div>
+</div>
+
                     </div>
                 </div>
             </section>
