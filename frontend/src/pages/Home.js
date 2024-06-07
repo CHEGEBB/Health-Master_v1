@@ -64,6 +64,9 @@ const generateRandomBloodPressure = () => ({
 });
 const Homepage = () => {
   const { isDarkMode } = useDarkMode();
+  const [notificationCount, setNotificationCount] = useState(5);
+  const [reminderCount, setReminderCount] = useState(3); 
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [heartRateData, setHeartRateData] = useState([
     { x: 0, y: generateRandomHeartRate() }
   ]);
