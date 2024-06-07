@@ -101,9 +101,9 @@ const LandingPage = () => {
                     <p>This project was inspired by the need for better health management tools and is a portfolio project for Holberton School.</p>
                     <p>Meet the team:</p>
                     <ul>
-                        <li>Brian Chege - <a href='https://www.linkedin.com/in/brianchege'>LinkedIn</a>, <a href='https://github.com/brianchege'>GitHub</a>, <a href='https://twitter.com/brianchege'>Twitter</a></li>
+                        <li>Brian Chege - <a href='https://www.linkedin.com/in/brian-chege-14bb18245/'>LinkedIn</a>, <a href='https://github.com/brianchege'>GitHub</a>, <a href='https://twitter.com/brianchege'>Twitter</a></li>
                     </ul>
-                    <p>Check out the <a href='https://github.com/your-repo'>GitHub repository</a> for this project.</p>
+                    <p>Check out the <a href='https://github.com/CHEGEBB/Health-Master_v1'>GitHub repository</a> for this project.</p>
                 </div>
             </section>
             <section className='contact-section' id='contact'>
