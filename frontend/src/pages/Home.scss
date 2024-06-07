@@ -149,7 +149,63 @@ header {
     position: fixed;
     top: 0;
     z-index: 100;
+    .notifications, .reminders {
+      position: relative;
+      margin-left: 20px;
+      cursor: pointer;
+
+      .notification-count, .reminder-count {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: red;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+      }
+    }
   }
+  .popup {
+    position: absolute;
+    margin-top: -650px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    padding: 20px;
+
+    .popup-content {
+      max-width: 400px;
+      overflow-y: auto;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 10px;
+      }
+    }
+
+    button {
+      background-color: red;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  }
+
   
 
 .search-bar {

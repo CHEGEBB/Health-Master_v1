@@ -305,13 +305,13 @@ useEffect(() => {
           <img src={SearchIcon} alt="Search" style={iconStyles} />
           <input type="text" name="search" placeholder="Search"/>
         </div>
-        <div className="notifications" onClick={handleNotificationClick}>
+        <div className="notifications" onClick={handleNotificationClick} style={iconStyles}>
           {notificationCount > 0 && (
             <div className="notification-count">{notificationCount}</div>
           )}
           <img src={Notificationicon} alt="Notifications" />
         </div>
-        <div className="reminders" onClick={handleReminderClick}>
+        <div className="reminders" onClick={handleReminderClick} style={iconStyles}>
           {reminderCount > 0 && (
             <div className="reminder-count">{reminderCount}</div>
           )}
