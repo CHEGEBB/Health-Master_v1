@@ -20,7 +20,7 @@ const VirtualHealthCoach = () => {
     setError(null);
 
     try {
-      const response = await fetch('http://localhost:3001/gemini/generateText', {
+      const response = await fetch('https://health-master-backend.onrender.com/gemini/generateText', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
