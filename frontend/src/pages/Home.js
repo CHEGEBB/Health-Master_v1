@@ -247,7 +247,50 @@ const rateStyles={
 const handleDeleteReport = (report) => {
   console.log(`Deleting report: ${report}`);
 }
+const notifications = [
+  {
+    type: "Appointment",
+    time: "10:00 AM",
+    date: "2024-06-10",
+    doctor: "Dr. Smith",
+    location: "Healthcare Center"
+  },
+  {
+    type: "Medication Reminder",
+    time: "12:00 PM",
+    date: "2024-06-11",
+    medication: "Aspirin",
+    dosage: "1 tablet"
+  }
+];
 
+const reminders = [
+  {
+    type: "Health Checkup",
+    time: "08:00 AM",
+    date: "2024-06-12",
+    location: "Hospital"
+  },
+  {
+    type: "Medication Reminder",
+    time: "10:00 AM",
+    date: "2024-06-13",
+    medication: "Antibiotics",
+    dosage: "2 capsules"
+  }
+];
+
+const handleNotificationClick = () => {
+  setIsPopupOpen(true);
+};
+
+const handleReminderClick = () => {
+  setIsPopupOpen(true);
+};
+
+const handleClosePopup = () => {
+  setIsPopupOpen(false);
+};
 
 useEffect(() => {
   const timer = setTimeout(() => {
@@ -262,11 +305,17 @@ useEffect(() => {
           <img src={SearchIcon} alt="Search" style={iconStyles} />
           <input type="text" name="search" placeholder="Search"/>
         </div>
-        <div className="notifications">
-          <img src={Notificationicon} alt="Notifications" style={iconStyles}/>
+        <div className="notifications" onClick={handleNotificationClick}>
+          {notificationCount > 0 && (
+            <div className="notification-count">{notificationCount}</div>
+          )}
+          <img src={Notificationicon} alt="Notifications" />
         </div>
-        <div className="reminders">
-          <img src={Remindericon} alt="Reminders" style={iconStyles}/>
+        <div className="reminders" onClick={handleReminderClick}>
+          {reminderCount > 0 && (
+            <div className="reminder-count">{reminderCount}</div>
+          )}
+          <img src={Remindericon} alt="Reminders" />
         </div>
         <div className="profile">
           <img className="profile-pic" src={ProfilePic} alt="Profile" />
@@ -631,6 +680,49 @@ useEffect(() => {
           </div>
         </div>
       </div>
+      {isPopupOpen && (
+        <div className="popup">
+          <div className="popup-content">
+            <h3>Notifications</h3>
+            <ul>
+              {notifications.map((notification, index) => (
+                <li key={index}>
+                  <strong>{notification.type}</strong> - {notification.time}, {notification.date}
+                  {notification.doctor && (
+                    <div>
+                      Doctor: {notification.doctor}, Location: {notification.location}
+                    </div>
+                  )}
+                  {notification.medication && (
+                    <div>
+                      Medication: {notification.medication}, Dosage: {notification.dosage}
+                    </div>
+                  )}
+                </li>
+              ))}
+            </ul>
+            <h3>Reminders</h3>
+            <ul>
+              {reminders.map((reminder, index) => (
+                <li key={index}>
+                  <strong>{reminder.type}</strong> - {reminder.time}, {reminder.date}
+                  {reminder.location && (
+                    <div>
+                      Location: {reminder.location}
+                    </div>
+                  )}
+                  {reminder.medication && (
+                    <div>
+                      Medication: {reminder.medication}, Dosage: {reminder.dosage}
+                    </div>
+                  )}
+                </li>
+              ))}
+            </ul>
+            <button onClick={handleClosePopup}>Close</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
