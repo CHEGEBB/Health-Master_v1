@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import './Signup.scss';
 import { auth } from '../firebase';
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
@@ -7,6 +7,8 @@ import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 const Signup = () => {
     const [passwordStrength, setPasswordStrength] = useState('');
     const [passwordMatch, setPasswordMatch] = useState(true); 
+    const [successMessage, setSuccessMessage] = useState(false);
+
 
     const checkPasswordStrength = (password) => {
         if (password.length >= 8 && /[!@#$%^&*(),.?":{}|<>]/.test(password) ) {
@@ -49,16 +51,26 @@ const Signup = () => {
                 displayName: name
             });
 
-            console.log("User signed up successfully:", userCredential.user);
+            setSuccessMessage('Signup successful! You can now log in.');
+            // alert("User signed up successfully:", userCredential.user);
         } catch (error) {
             console.error("Error signing up:", error.message);
         }
     };
 
+    useEffect(() => {
+        if (successMessage) {
+            const timer = setTimeout(() => {
+                setSuccessMessage(false);
+            }, 5000);
+            return () => clearTimeout(timer);
+        }
+    }, [successMessage]);
 
 
     return (
         <div className="signup-container">
+
         <div className="overlay"></div>
         <div className="sign-up">
           <div className="left">
@@ -69,8 +81,8 @@ const Signup = () => {
           
             <div className="signup-form">
                 <h2>Sign Up</h2>
-              
                 <form onSubmit={handleSubmit}>
+                {successMessage && <div className="success-message">{successMessage}</div>}
                     <div className="form-group">
                         <label htmlFor="email">Email</label>
                         <input type="email" id="email" name="email" required />

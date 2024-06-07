@@ -21,16 +21,6 @@ $azure: #f0ffff;
 $special1:#09101A;
 $special2:#041f46;
 
-$cool-dark1: #2c3e50; // Midnight Blue
-$cool-dark2: #34495e; // Dark Slate Gray
-$cool-dark3: #2c3e50; // Dark Cyan
-$cool-dark4: #556b78; // Cadet Blue
-$cool-dark5: #36454f; // Dark Steel Blue
-$cool-dark6: #4d6270; // Slate Gray
-$cool-dark7: #5c6770; // Light Slate Gray
-$cool-dark8: #586b7a; // Dark Gray
-$cool-dark9: #62727b; // Dim Gray
-$cool-dark10: #6b7981; // Gray
 
 
 $dark-pink: #ff1493;
@@ -107,6 +97,7 @@ $dark-green: #006400;
   background: url("../images/bg1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 .sign-up{
   display: flex;
@@ -183,6 +174,22 @@ $dark-green: #006400;
   align-items: center;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
+  .success-message {
+    background-color: #00ff00;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+  
 
 
 }
