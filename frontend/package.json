@@ -2,7 +2,7 @@
   "name": "health-master",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://CHEGEBB.github.io/Health-Master",
+  "homepage": "https://github.com/CHEGEBB/Health-Master_v1",
   "dependencies": {
     "@firebase/auth": "^1.7.4",
     "@google/generative-ai": "^0.12.0",
