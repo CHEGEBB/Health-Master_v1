@@ -16,7 +16,7 @@ const Sidenav = () => {
     const [activeItem, setActiveItem] = useState('');
 
     const navStyles = {
-        backgroundColor: isDarkMode ? '#162447' : '#3A7BD5',
+        backgroundColor: isDarkMode ? '#162447' : '#6a5acd',
         color: isDarkMode ? '#ffffff' : '#000000'
     };
 

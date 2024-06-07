@@ -185,12 +185,19 @@ $dark-green: #006400;
                 position: relative;
                 z-index: 1000;
                 margin-top: -50px;
+                
 
                 img{
                     width: 100px;
                     height: 100px;
                     border-radius: 50%;
                     border: 2px solid $white-smoke;
+                    &:hover{
+                      cursor: pointer;
+                      transition: 0.5s;
+                      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                      transform : scale(1.05);
+                    }
                 }
             }
         }
@@ -211,6 +218,12 @@ $dark-green: #006400;
                     color: #555;
                     font-weight: 600;
                     font-family: $Opensans;
+                    &:hover{
+                      cursor: pointer;
+                      transition: 0.5s;
+                      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                      transform : scale(1.05);
+                    }
                 }
 
                 p{
@@ -218,6 +231,12 @@ $dark-green: #006400;
                     color: $special1;
                     font-weight: 700;
                     font-family: $Opensans;
+                    &:hover{
+                      cursor: pointer;
+                      transition: 0.5s;
+                      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                      transform : scale(1.05);
+                    }
                 }
 
                 .row1, .row2{
@@ -333,6 +352,12 @@ $dark-green: #006400;
                 flex-direction: column;
                 align-items: center;
                 margin-left: -90px;
+                &:hover{
+                  cursor: pointer;
+                  transition: 0.5s;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                  transform : scale(1.05);
+                }
                 h3{
                     font-family: $Rubik;
                     font-size: 18px;
@@ -356,6 +381,12 @@ $dark-green: #006400;
               border-radius: 50%;
               margin-right: 10px;
               border:  2px solid $special14;
+              &:hover{
+                cursor: pointer;
+                transition: 0.5s;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                transform : scale(1.05);
+              }
             }
       
             .delete-button {
@@ -389,6 +420,7 @@ $dark-green: #006400;
         background-color: #e0e0e0;
         border-radius: 10px;
         padding: 20px;
+        
       
         h2 {
           font-family: $Rubik;
@@ -405,6 +437,12 @@ $dark-green: #006400;
           background-color: #f0f0f0;
           padding: 15px;
           border-radius: 5px;
+          &:hover{
+            cursor: pointer;
+            transition: 0.5s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transform : scale(1.05);
+          }
       
           .history-content {
             display: flex;
