@@ -14,14 +14,12 @@ const VirtualHealthCoach = () => {
   const handleInputChange = (event) => {
     setUserInput(event.target.value);
   };
-
   const handleSubmit = async (event) => {
     event.preventDefault();
     setError(null);
-
+  
     try {
-      // Fetch response from backend API here and update conversation state
-      const response = await fetch('http://localhost:3001/gemini/generateText', {
+      const response = await fetch('https://health-master-backend.onrender.com/gemini/generateText', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -38,6 +36,7 @@ const VirtualHealthCoach = () => {
       setError('Error fetching response. Please try again later.');
     }
   };
+  
 
  
 const weeklyStyles={

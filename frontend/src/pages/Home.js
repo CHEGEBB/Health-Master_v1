@@ -282,6 +282,7 @@ const reminders = [
 
 const handleNotificationClick = () => {
   setIsPopupOpen(true);
+
 };
 
 const handleReminderClick = () => {
@@ -291,6 +292,8 @@ const handleReminderClick = () => {
 const handleClosePopup = () => {
   setIsPopupOpen(false);
 };
+
+
 
 useEffect(() => {
   const timer = setTimeout(() => {
