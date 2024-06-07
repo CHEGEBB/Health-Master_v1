@@ -31,4 +31,4 @@ Special thanks to all contributors who have helped make Health Master even bette
 
 ## Contact 📧
 
-For any inquiries or feedback, please email us at healthmaster@example.com.
+For any inquiries or feedback, please email us at chegephil@gmail.com.
