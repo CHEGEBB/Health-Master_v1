@@ -324,6 +324,49 @@ useEffect(() => {
             <span className="profile-email">john.doe@example.com</span>
           </div>
         </div>
+        {isPopupOpen && (
+        <div className="popup" style={rateStyles}>
+          <div className="popup-content">
+            <h3>Notifications</h3>
+            <ul>
+              {notifications.map((notification, index) => (
+                <li key={index}>
+                  <strong>{notification.type}</strong> - {notification.time}, {notification.date}
+                  {notification.doctor && (
+                    <div>
+                      Doctor: {notification.doctor}, Location: {notification.location}
+                    </div>
+                  )}
+                  {notification.medication && (
+                    <div>
+                      Medication: {notification.medication}, Dosage: {notification.dosage}
+                    </div>
+                  )}
+                </li>
+              ))}
+            </ul>
+            <h3>Reminders</h3>
+            <ul>
+              {reminders.map((reminder, index) => (
+                <li key={index}>
+                  <strong>{reminder.type}</strong> - {reminder.time}, {reminder.date}
+                  {reminder.location && (
+                    <div>
+                      Location: {reminder.location}
+                    </div>
+                  )}
+                  {reminder.medication && (
+                    <div>
+                      Medication: {reminder.medication}, Dosage: {reminder.dosage}
+                    </div>
+                  )}
+                </li>
+              ))}
+            </ul>
+            <button onClick={handleClosePopup}>Close</button>
+          </div>
+        </div>
+      )}
       </header>
       <div className="main">
         <div className="quick-actions">
@@ -680,49 +723,6 @@ useEffect(() => {
           </div>
         </div>
       </div>
-      {isPopupOpen && (
-        <div className="popup">
-          <div className="popup-content">
-            <h3>Notifications</h3>
-            <ul>
-              {notifications.map((notification, index) => (
-                <li key={index}>
-                  <strong>{notification.type}</strong> - {notification.time}, {notification.date}
-                  {notification.doctor && (
-                    <div>
-                      Doctor: {notification.doctor}, Location: {notification.location}
-                    </div>
-                  )}
-                  {notification.medication && (
-                    <div>
-                      Medication: {notification.medication}, Dosage: {notification.dosage}
-                    </div>
-                  )}
-                </li>
-              ))}
-            </ul>
-            <h3>Reminders</h3>
-            <ul>
-              {reminders.map((reminder, index) => (
-                <li key={index}>
-                  <strong>{reminder.type}</strong> - {reminder.time}, {reminder.date}
-                  {reminder.location && (
-                    <div>
-                      Location: {reminder.location}
-                    </div>
-                  )}
-                  {reminder.medication && (
-                    <div>
-                      Medication: {reminder.medication}, Dosage: {reminder.dosage}
-                    </div>
-                  )}
-                </li>
-              ))}
-            </ul>
-            <button onClick={handleClosePopup}>Close</button>
-          </div>
-        </div>
-      )}
     </div>
   );
 };
