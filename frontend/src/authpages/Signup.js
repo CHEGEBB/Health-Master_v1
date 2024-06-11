@@ -3,13 +3,13 @@ import './Signup.scss';
 import { auth } from '../firebase';
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 
-
+// This component is used to sign up a new user. It takes the user's name, email, password, and confirm password as input. It checks if the password is strong enough and if the password and confirm password match. If the user is successfully signed up, it displays a success message. If there is an error, it logs the error to the console.
 const Signup = () => {
     const [passwordStrength, setPasswordStrength] = useState('');
     const [passwordMatch, setPasswordMatch] = useState(true); 
     const [successMessage, setSuccessMessage] = useState(false);
 
-
+// This function checks the strength of the password. If the password is at least 8 characters long and contains at least one special character, it is considered strong. If the password is at least 6 characters long and contains at least one letter, it is considered moderate. Otherwise, it is considered weak.
     const checkPasswordStrength = (password) => {
         if (password.length >= 8 && /[!@#$%^&*(),.?":{}|<>]/.test(password) ) {
             setPasswordStrength('The Password is strong');
