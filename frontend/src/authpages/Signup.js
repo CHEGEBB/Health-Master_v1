@@ -59,7 +59,6 @@ const Signup = () => {
             })
 
             setSuccessMessage('Signup successful! You can now log in.')
-            // alert("User signed up successfully:", userCredential.user);
         } catch (error) {
             console.error('Error signing up:', error.message)
         }
