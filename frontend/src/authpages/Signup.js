@@ -19,18 +19,18 @@ const Signup = () => {
             setPasswordStrength('The Password is weak');
         }
     };
-
+// This function checks if the password and confirm password match. If they match, it sets the passwordMatch state to true. Otherwise, it sets it to false.
     const handlePasswordChange = (e) => {
         const password = e.target.value;
         checkPasswordStrength(password);
     };
-
+// This function checks if the password and confirm password match. If they match, it sets the passwordMatch state to true. Otherwise, it sets it to false.
     const handleConfirmPasswordChange = (e) => {
         const confirmPassword = e.target.value;
         const password = e.target.form.password.value;
         setPasswordMatch(password === confirmPassword);
     };
-
+// This handles the form submission. It gets the user's name, email, password, and confirm password from the form. It checks if the password and confirm password match and if the password is strong enough. If the user is successfully signed up, it displays a success message. If there is an error, it logs the error to the console.
     const handleSubmit = async (e) => {
         e.preventDefault();
         const name = e.target.name.value;
